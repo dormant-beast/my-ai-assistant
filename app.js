@@ -16,7 +16,7 @@ const btnText = micBtn.querySelector('.btn-text');
 let recognition;
 if (SpeechRecognition) {
     recognition = new SpeechRecognition();
-    recognition.lang = 'bn-BD';  // বাংলা (বাংলাদেশ) - 'bn-IN' ও ব্যবহার করতে পারো
+    recognition.lang = 'bn-BD';  // বাংলা (বাংলাদেশ)
     recognition.interimResults = false; // পুরো কথা শেষ হলেই রেজাল্ট দেবে
     recognition.maxAlternatives = 1;    // একটি মাত্র বিকল্প নেবে
 } else {
@@ -92,7 +92,7 @@ function speak(text) {
     responseBox.innerText = text;
 }
 
-// কিছু ডিভাইসে getVoices() async এ লোড হয়, তাই voices changed ইভেন্টেও সেট করা যায়
+// কিছু ডিভাইসে getVoices() async এ লোড হয়
 window.speechSynthesis.onvoiceschanged = () => {
-    // দরকার হলে এখানে বাংলা ভয়েস পুনরায় সিলেক্ট করা যায়, কিন্তু এখন দরকার নেই।
+    // দরকার হলে বাংলা ভয়েস রি-চেক করা যায়
 };
