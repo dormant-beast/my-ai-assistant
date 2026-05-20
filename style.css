@@ -1,1 +1,30 @@
-
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+#micBtn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    background: #0088cc;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+#responseBox {
+    margin-top: 1rem;
+    min-height: 50px;
+    font-size: 1.2rem;
+}
