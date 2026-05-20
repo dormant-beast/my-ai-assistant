@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমার সহকারী</title>
+    <!-- ... মেটা ট্যাগ ... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="icon-192.png">
 </head>
 <body>
-    <div class="container">
-        <h1>আমার AI সহকারী</h1>
-        <button id="micBtn">🎤 বলো কিছু</button>
-        <div id="responseBox"></div>
+    <div class="main-bg"></div>
+    <div class="container glass">
+        <div class="orb" id="orb">
+            <div class="orb-inner"></div>
+        </div>
+        <h1 class="title">আমার <span>AI</span> সহকারী</h1>
+        <p class="subtitle">সব সময় প্রস্তুত</p>
+        <div class="mic-wrapper">
+            <button id="micBtn" class="mic-btn">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                <span class="btn-text">বলো কিছু</span>
+            </button>
+            <div class="wave" id="wave"></div>
+        </div>
+        <div id="responseBox" class="response-box"></div>
     </div>
     <script src="app.js"></script>
 </body>
